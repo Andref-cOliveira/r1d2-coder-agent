@@ -1,0 +1,67 @@
+Arguments: 
+  /home/andre.oliveira/.nvm/versions/node/v18.20.6/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /home/andre.oliveira/.npm/_npx/05c7df0a6072f35b/node_modules/.bin:/home/andre.oliveira/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/home/andre.oliveira/.nvm/versions/node/v18.20.6/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/andre.oliveira/.nvm/versions/node/v18.20.6/bin:/opt/anaconda3/bin:/opt/anaconda3/condabin:/home/andre.oliveira/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/home/andre.oliveira/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  18.20.6
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+
+npm manifest: 
+  {
+    "name": "r1d2-coder-agent",
+    "displayName": "r1d2-coder-agent",
+    "description": "chat agent using DeepSeek ollama",
+    "version": "0.0.1",
+    "engines": {
+      "vscode": "^1.96.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "r1d2-coder-agent.helloWorld",
+          "title": "Hello World"
+        }
+      ]
+    },
+    "scripts": {
+      "vscode:prepublish": "yarn run compile",
+      "compile": "tsc -p ./",
+      "watch": "tsc -watch -p ./",
+      "pretest": "yarn run compile && yarn run lint",
+      "lint": "eslint src",
+      "test": "vscode-test"
+    },
+    "devDependencies": {
+      "@types/vscode": "^1.96.0",
+      "@types/mocha": "^10.0.10",
+      "@types/node": "20.x",
+      "@typescript-eslint/eslint-plugin": "^8.17.0",
+      "@typescript-eslint/parser": "^8.17.0",
+      "eslint": "^9.16.0",
+      "typescript": "^5.7.2",
+      "@vscode/test-cli": "^0.0.10",
+      "@vscode/test-electron": "^2.4.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
